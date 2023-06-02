@@ -3,10 +3,11 @@
 	"version": "0.0.0",
 	"devDependencies": {
 		"vite": "^4.3.9",
-		"wrangler": "^3.0.1"
+		"wrangler": "^2.20"
 	},
 	"private": true,
 	"scripts": {
-		"dev": "wrangler pages dev --proxy 4173 --script-path=./my-worker.js -- vite preview"
+		"dev": "npx wrangler@2 pages dev --proxy 4173 --script-path=./my-worker.js -- vite preview",
+    "dev:3": "npx wrangler@3 pages dev --proxy 4173 --script-path=./my-worker.js -- vite preview"
 	}
 }
